@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charles Sherman – Solutions Engineer</title>
+<meta name="description" content="Senior Solutions Engineer for Financial Services and regulated buyers. POCs on unstructured data, competitive wins, and agentic AI built hands-on.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --text:#1b1d21; --muted:#5d6370; --line:#e4e1da;
+  --accent:#1f5f8b; --accent-soft:#e6eff6; --tag:#f1eee7;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121417; --surface:#1a1d22; --text:#e9eaec; --muted:#a2a8b3; --line:#2b3038;
+    --accent:#7db7e0; --accent-soft:#1d2a36; --tag:#23272e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121417; --surface:#1a1d22; --text:#e9eaec; --muted:#a2a8b3; --line:#2b3038;
+  --accent:#7db7e0; --accent-soft:#1d2a36; --tag:#23272e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+a{color:var(--accent)}
+header{padding:64px 0 40px}
+h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin:0 0 12px;letter-spacing:-.02em}
+.lede{font-size:1.15rem;color:var(--muted);max-width:640px;margin:0 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--text);text-decoration:none;font-weight:500;font-size:.95rem}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 20px;font-weight:600}
+h3{font-size:1.35rem;margin:0 0 8px;letter-spacing:-.01em}
+.video{aspect-ratio:16/9;background:var(--tag);border:1px dashed var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);margin:20px 0;text-align:center;padding:16px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:20px 0;font-size:.9rem}
+.node{padding:8px 12px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+.node.hub{background:var(--accent-soft);border-color:var(--accent);font-weight:600}
+.node.human{border-style:dashed}
+.arrow{color:var(--muted)}
+ul.points{padding-left:20px;margin:12px 0}
+ul.points li{margin:6px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card .big{font-size:1.6rem;font-weight:700;color:var(--accent);margin-bottom:4px}
+.card p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
+.card h4{margin:0;font-size:1rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:.78rem;background:var(--tag);padding:3px 8px;border-radius:999px;color:var(--muted)}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}
+.step::before{counter-increment:s;content:counter(s);width:32px;height:32px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700}
+.step p{margin:2px 0 0;color:var(--muted)}
+.soon{opacity:.75}
+footer{padding:40px 0 64px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Charles Sherman</h1>
+  <p class="lede">Senior Solutions Engineer for Financial Services and other regulated buyers. I win technical evaluations on messy, unstructured data, and I build the agentic AI I demo.</p>
+  <div class="btns">
+    <a class="btn primary" href="#village-hall">Watch the demo</a>
+    <a class="btn" href="Charles_Sherman_Resume.pdf">Resume (PDF)</a>
+    <a class="btn" href="https://www.linkedin.com/in/REPLACE-ME">LinkedIn</a>
+    <a class="btn" href="mailto:REPLACE-ME">Email</a>
+  </div>
+</header>
+
+<section id="village-hall">
+  <h2>Featured build</h2>
+  <h3>Village Hall: an agentic service desk</h3>
+  <p>A village hall is a small enterprise service desk: messy requests, specialist queues, and decisions only a human may make. I built an agentic front door that classifies requests, routes them to specialists with least privilege, and stops for a person before anything real happens.</p>
+
+  <div class="video">▶ 2-minute walkthrough video goes here</div>
+
+  <div class="flow" aria-label="How a request flows through the agents">
+    <span class="node">Resident question</span><span class="arrow">→</span>
+    <span class="node hub">Village Manager (orchestrator)</span><span class="arrow">→</span>
+    <span class="node">Building &amp; Zoning · Public Works · Clerk</span><span class="arrow">→</span>
+    <span class="node human">Inspector approves</span>
+  </div>
+
+  <ul class="points">
+    <li><strong>Least privilege.</strong> Each specialist searches only its own chapters of the code. The orchestrator's only tool is <em>delegate</em>.</li>
+    <li><strong>Grounded answers.</strong> Permit rules come from the server, not the model, and citations are checked against what the search actually returned.</li>
+    <li><strong>Human in the loop.</strong> No model tool can approve anything. There is no approve tool to call.</li>
+    <li><strong>Auditable.</strong> Every step, tool call and token count is visible in a trace under the answer.</li>
+  </ul>
+  <div class="tags"><span class="tag">Claude API</span><span class="tag">Multi-agent orchestration</span><span class="tag">Tool use</span><span class="tag">Ruby</span><span class="tag">Slack</span></div>
+  <p style="margin-top:20px"><a class="btn" href="https://REPLACE-ME.onrender.com">Try the live demo</a> <span style="color:var(--muted);font-size:.9rem">&nbsp;Password on request</span></p>
+</section>
+
+<section>
+  <h2>Selected wins</h2>
+  <div class="grid">
+    <div class="card"><div class="big">~$40M</div><h4>Largest FS deal in Qualtrics history</h4><p>Led technical strategy across a long, multi-stakeholder enterprise cycle.</p></div>
+    <div class="card"><div class="big">$2M ACV</div><h4>Conversational-analytics POC</h4><p>Led hands-on a POC for a large life insurer, combining survey, digital and call data mapped to KPIs, and displaced the incumbent contact-center tools.</p></div>
+    <div class="card"><div class="big">#1 SE</div><h4>North America, 2024</h4><p>Ranked first by revenue generated, alongside several competitive rip-and-replace wins in FS.</p></div>
+    <div class="card"><div class="big">25,000+</div><h4>Adobe Summit 2018 keynote</h4><p>Designed and built the Advertising Cloud demo featured in the keynote.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How I work</h2>
+  <div class="steps">
+    <div class="step"><div><strong>Discovery that finds the real evaluation criteria</strong><p>Retail and commercial banking, insurance and wealth management buyers, including the security and vendor-risk questions that stall deals late.</p></div></div>
+    <div class="step"><div><strong>POCs on the buyer's own data</strong><p>Unstructured text and call-center transcripts, because that's where buyers need proof before they sign.</p></div></div>
+    <div class="step"><div><strong>Integrations they actually ask about</strong><p>HRIS feeds over SFTP, webhooks, SSO, and Slack and ServiceNow workflows.</p></div></div>
+    <div class="step"><div><strong>Player-coach</strong><p>Led a team of 6 FS Solutions Engineers while staying hands-on in 25+ deals. I coach SEs and AEs on evaluation strategy and competitive positioning.</p></div></div>
+  </div>
+</section>
+
+<section class="soon" id="labs">
+  <h2>Labs</h2>
+  <p style="color:var(--muted)">Small builds on public data. Coming soon.</p>
+</section>
+
+<footer>
+  Village Hall is a concept site, not affiliated with any municipality. Client names withheld.
+</footer>
+
+</div>
+</body>
+</html>
